@@ -20,15 +20,15 @@
               </div>
               <div class="form-group">
                   <label for="password">비밀번호</label>
-                  <input type="password" class="form-control" id="password" name="password" value="${user.Password}">
+                  <input type="password" class="form-control" id="password" name="password" value="${user.password}">
               </div>
               <div class="form-group">
                   <label for="name">이름</label>
-                  <input class="form-control" id="name" name="name" value="${user.Name}">
+                  <input class="form-control" id="name" name="name" value="${user.name}">
               </div>
               <div class="form-group">
                   <label for="email">이메일</label>
-                  <input type="email" class="form-control" id="email" name="email" value="${user.Email}">
+                  <input type="email" class="form-control" id="email" name="email" value="${user.email}">
               </div>
               <button type="submit" class="btn btn-success clearfix pull-right">개인정보 수정</button>
               <div class="clearfix" />
