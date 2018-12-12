@@ -20,7 +20,7 @@
                 </div>
                 <div class="form-group">
                     <label for="password">비밀번호</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                    <input type="password" class="form-control" id="password" name="password" value="${user.password}">
                 </div>
                 <div class="form-group">
                     <label for="name">이름</label>

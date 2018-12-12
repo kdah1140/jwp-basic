@@ -76,7 +76,7 @@ public class JdbcTemplate {
 		return new PreparedStatementSetter() {
 			public void setParameters(PreparedStatement pstmt) throws SQLException{
 				for(int i=0; i<parameters.length; i++) {
-					pstmt.setObject(i+1,parameters);
+					pstmt.setObject(i+1,parameters[i]);
 					}
 				}
 			};

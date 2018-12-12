@@ -19,11 +19,11 @@
 						<div class="wrap">
 							<div class="main">
 								<strong class="subject">
-									<a href="/qna/show?questionId=${each.questionId}"> ${each.title} </a href>									
+									<a href="/qna/show?questionId=${each.questionId}"> ${each.title} </a>									
 								</strong>
 								<div class="auth-into">
 									<i class="icon-add-comment"></i>
-									<span clss="time"> <fmt:formatDate pattern="yyyy-MM-dd HH:mm:ss" value="${each.createdDate}"/> </span>
+									<span class="time"> <fmt:formatDate pattern="yyyy-MM-dd HH:mm:ss" value="${each.createdDate}"/> </span>
 									<a href="#" class="author"> ${each.writer} </a>						
 								</div>
 								<div class="reply" title="댓글">

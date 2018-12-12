@@ -18,7 +18,7 @@ public class ShowController implements Controller {
 		req.setAttribute("question", questionDao.findById(questionId));
 		req.setAttribute("answers", answerDao.findAll(questionId));
 
-		return "qna/show.jsp";
+		return "/qna/show.jsp";
 	}
 
 }

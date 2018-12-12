@@ -24,10 +24,10 @@ public class UserDao {
          String sql = "UPDATE USERS SET password = ?, name = ?,"
      		    + "email = ? WHERE userId = ?";
          
-         jdbcTemplate.update(sql, user.getUserId(),
-     			user.getPassword(),
+         jdbcTemplate.update(sql, user.getPassword(),
      			user.getName(),
-     			user.getEmail());  
+     			user.getEmail(),
+         		user.getUserId());  
        }
 
 	public List<User> findAll() throws SQLException {

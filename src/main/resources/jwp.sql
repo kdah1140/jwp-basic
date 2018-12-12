@@ -28,13 +28,13 @@ CREATE TABLE QUESTIONS (
 DROP TABLE IF EXISTS ANSWERS; 
 
 CREATE TABLE ANSWERS (
-	answersId		bigint			auto_increment,
+	answerId		bigint			auto_increment,
 	writer			varchar(30)		NOT NULL,
 	contents		varchar(5000)	NOT NULL,
 	createdDate		timestamp		NOT NULL,
 	questionId		bigint			NOT NULL,
 	
-	PRIMARY KEY     (answersId)
+	PRIMARY KEY     (answerId)
 );
 
 INSERT INTO QUESTIONS (questionId, writer, title, contents, createdDate, countOfAnswer) VALUES
